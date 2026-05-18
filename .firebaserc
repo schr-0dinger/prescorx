@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "presco-f091a"
+  },
+  "targets": {
+    "presco-f091a": {
+      "hosting": {
+        "marketing": [
+          "presco-f091a-kavum-marketing"
+        ]
+      }
+    }
+  }
+}

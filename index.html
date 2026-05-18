@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kavum | Digital Prescription App for Doctors in India</title>
   <meta name="description"
-    content="Kavum is a digital prescription app for doctors in India. Create structured e-prescriptions, manage encrypted patient records, and share prescriptions by WhatsApp or PDF from Android.">
+    content="Kavum is a digital prescription app for doctors in India. Create e-prescriptions, manage encrypted patient records, and share PDFs from Android with no ads.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Dr. Kailas Nath K M">
   <meta name="application-name" content="Kavum">
   <meta name="apple-mobile-web-app-title" content="Kavum">
-  <meta name="theme-color" content="#f6f1e8">
-  <link rel="icon" type="image/png" href="assets/kavum_light.png">
-  <link rel="apple-touch-icon" href="assets/kavum_light.png">
+  <meta name="theme-color" content="#e4f1ec">
+  <link rel="icon" type="image/png" href="assets/play_store_512.png">
+  <link rel="apple-touch-icon" href="assets/play_store_512.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kavum.in/">
   <meta property="og:site_name" content="Kavum">
   <meta property="og:locale" content="en_IN">
   <meta property="og:title" content="Kavum | Digital Prescription App for Doctors in India">
-  <meta property="og:description" content="Create structured e-prescriptions, manage encrypted patient records, and share prescriptions by WhatsApp or PDF from Android.">
+  <meta property="og:description" content="Create e-prescriptions, manage encrypted patient records, and share PDFs from Android with no ads.">
   <meta property="og:image" content="https://kavum.in/assets/app-art.png">
   <meta property="og:image:secure_url" content="https://kavum.in/assets/app-art.png">
   <meta property="og:image:width" content="1024">
@@ -27,7 +27,7 @@
   <meta property="og:image:alt" content="Kavum digital prescription app artwork">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kavum | Digital Prescription App for Doctors in India">
-  <meta name="twitter:description" content="Create structured e-prescriptions, manage encrypted patient records, and share prescriptions by WhatsApp or PDF from Android.">
+  <meta name="twitter:description" content="Create e-prescriptions, manage encrypted patient records, and share PDFs from Android with no ads.">
   <meta name="twitter:image" content="https://kavum.in/assets/app-art.png">
   <meta name="twitter:image:alt" content="Kavum digital prescription app artwork">
   <link rel="canonical" href="https://kavum.in/">
@@ -129,6 +129,7 @@
           "WhatsApp prescription sharing",
           "PDF and PNG export",
           "AES-256-GCM end-to-end encryption",
+          "No ads in the free tier",
           "Multiple prescription templates",
           "Unlimited prescription history (Pro)"
         ]
@@ -138,12 +139,8 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-  <script>
-    (function () { var t = localStorage.getItem('kavum-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); document.documentElement.dataset.theme = t; })();
-  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -151,7 +148,7 @@
 
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Kavum home">
-      <img class="brand__icon brand__icon--light" src="assets/kavum_light.png" alt="Kavum"><img class="brand__icon brand__icon--dark"  src="assets/kavum_dark.png"  alt="Kavum">
+      <img class="brand__icon brand__icon--light" src="assets/play_store_512.png" alt="Kavum">
       <span class="brand__name">Kavum</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
@@ -159,24 +156,6 @@
       <a href="#pricing">Pricing</a>
       <a href="#legal">Legal</a>
     </nav>
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-      </svg>
-      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="5" />
-        <line x1="12" y1="1" x2="12" y2="3" />
-        <line x1="12" y1="21" x2="12" y2="23" />
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-        <line x1="1" y1="12" x2="3" y2="12" />
-        <line x1="21" y1="12" x2="23" y2="12" />
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-      </svg>
-    </button>
     <a class="btn btn--primary btn--sm" href="https://play.google.com/store/apps/details?id=com.schr_0dinger.presco"
       target="_blank" rel="noreferrer">Get the App</a>
   </header>
@@ -187,11 +166,11 @@
     <section class="hero">
       <div class="wrap hero__inner">
         <div class="hero__copy">
-          <p class="eyebrow">For Doctors, By a Doctor</p>
-          <h1>Write prescriptions professionally.</h1>
+          <p class="eyebrow">For doctors, by a doctor</p>
+          <h1>Digital Prescriptions for Indian doctors</h1>
+
           <p class="hero__lede">
-            Kavum is a structured prescription and patient record tool built for practicing doctors in India. End-to-end
-            encrypted, India-hosted, and ready to share in one tap.
+            Kavum brings patient notes, prescription writing, history, signatures, and sharing into one Android workflow built around real consultations.
           </p>
           <div class="hero__actions">
             <a class="btn btn--white" href="https://play.google.com/store/apps/details?id=com.schr_0dinger.presco"
@@ -200,9 +179,9 @@
                 <path
                   d="M3.18 23.76a2 2 0 0 1-.86-.85L12 13l2.83 2.83L3.18 23.76ZM1 2.34A2 2 0 0 0 .5 3.5v17a2 2 0 0 0 .5 1.16L12 11 1 2.34ZM20.49 10.26l-2.89-1.64L14.42 12l3.17 3.17 2.9-1.64A2.02 2.02 0 0 0 20.49 10.26ZM3.18.24 15.83 8.17 13 11 3.18.24Z" />
               </svg>
-              Get on Play Store
+              Get Kavum
             </a>
-            <a class="btn btn--ghost-white" href="#features">See features</a>
+            <a class="btn btn--ghost-white" href="#features">Explore workflow</a>
           </div>
           <ul class="trust-pills" aria-label="Trust signals">
             <li>
@@ -210,9 +189,9 @@
                 aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
-              AES-256-GCM encrypted
+              Encrypted medical records
             </li>
-            <li>
+            <!-- <li>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                 aria-hidden="true">
                 <circle cx="12" cy="12" r="10" />
@@ -220,13 +199,13 @@
                   d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
               </svg>
               India-hosted · Mumbai
-            </li>
+            </li> -->
             <li>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                 aria-hidden="true">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-              DPDPA 2023 aligned
+              Built for Indian doctors
             </li>
           </ul>
         </div>
@@ -239,7 +218,7 @@
             </div>
             <div class="rx-sheet">
               <div class="rx-sheet__head">
-                <img src="assets/cad.png" alt="">
+                <img src="assets/play_store_512.png" alt="">
                 <div>
                   <strong>Dr. Drake Ramoray</strong>
                   <span>MBBS · Reg. 12345 · General Medicine</span>
@@ -276,8 +255,8 @@
                 d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
             </svg>
             <div>
-              <strong>Share via WhatsApp</strong>
-              <span>PDF straight to the patient</span>
+              <strong>Share quickly</strong>
+              <span>PDF or image, ready for WhatsApp</span>
             </div>
           </div>
         </div>
@@ -289,7 +268,7 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow eyebrow--ink">Why Kavum?</p>
-          <h2>Everything a prescribing doctor needs.</h2>
+          <h2>Designed around the rhythm of a clinic.</h2>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
@@ -303,8 +282,8 @@
                 <polyline points="10 9 9 9 8 9" />
               </svg>
             </div>
-            <h3>Structured prescriptions</h3>
-            <p>Patient profiles, history, diagnoses, doctor's orders - all captured in a consistent, export-ready format.</p>
+            <h3>Structured, not stiff</h3>
+            <p>Capture patient details, diagnosis, medicines, advice, and follow-up in a clean format that is ready to export.</p>
           </article>
           <article class="feature-card">
             <div class="feature-card__icon">
@@ -316,9 +295,8 @@
                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
             </div>
-            <h3>Patient history</h3>
-            <p>Patient records and prescriptions in one encrypted archive. Search by name, phone, or patient ID.
-              Pre-fill repeat visits instantly.</p>
+            <h3>History that stays close</h3>
+            <p>Keep patients and prescriptions in one encrypted archive. Search by name, phone, or patient ID and start repeat visits faster.</p>
           </article>
           <article class="feature-card">
             <div class="feature-card__icon">
@@ -328,9 +306,8 @@
                 <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
               </svg>
             </div>
-            <h3>Telemedicine ready</h3>
-            <p>Log consultation mode, record consent, and document caregiver details for minor patients - in full
-              compliance with India's telemedicine guidelines.</p>
+            <h3>Consultation-aware</h3>
+            <p>Log consultation mode, consent, and caregiver details when needed, so the record matches the way the visit happened.</p>
           </article>
           <article class="feature-card">
             <div class="feature-card__icon">
@@ -340,8 +317,8 @@
                 <path d="M7 11V7a5 5 0 0 1 10 0v4" />
               </svg>
             </div>
-            <h3>End-to-end encrypted</h3>
-            <p>Data encrypted with AES-256-GCM.</p>
+            <h3>Privacy by default</h3>
+            <p>Medical records are protected with AES-256-GCM encryption and doctor-controlled account access.</p>
           </article>
         </div>
       </div>
@@ -352,13 +329,13 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow eyebrow--ink">Workflow</p>
-          <h2>From consultation to shareable prescription in one pass.</h2>
+          <h2>From consultation to shareable prescription in one flow.</h2>
         </div>
         <ol class="steps" aria-label="How it works">
           <li class="step">
             <span class="step__num" aria-hidden="true">1</span>
             <div>
-              <h3>Set up your doctor profile</h3>
+              <h3>Set up your profile once</h3>
               <p>Add your name, registration number, qualification, clinic details, and draw or upload your signature
                 once. It appears on every prescription automatically.</p>
             </div>
@@ -366,7 +343,7 @@
           <li class="step">
             <span class="step__num" aria-hidden="true">2</span>
             <div>
-              <h3>Capture the consultation</h3>
+              <h3>Document the visit</h3>
               <p>Record patient info, diagnosis, and medicines in a structured form. Returning patients are
                 pre-filled from history. Telemedicine fields are available when needed.</p>
             </div>
@@ -374,7 +351,7 @@
           <li class="step"> 
             <span class="step__num" aria-hidden="true">3</span>
             <div>
-              <h3>Preview, export and share</h3>
+              <h3>Preview and share</h3>
               <p>Review the prescription before sending. Export as a polished PDF, save as an image, or share directly
                 to the patient's WhatsApp in one tap.</p>
             </div>
@@ -388,14 +365,14 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow eyebrow--ink">Pricing</p>
-          <h2>Simple, transparent pricing.</h2>
-          <p class="section-head__sub">Free to use. Upgrade for unlimited history, no ads, and full template access.</p>
+          <h2>Simple plans for growing use.</h2>
+          <p class="section-head__sub">Start free on one device with no ads. Upgrade when you want encrypted cloud sync, unlimited history, and full template access.</p>
         </div>
         <div class="pricing-grid">
           <article class="pricing-card">
             <div class="pricing-card__head">
               <h3>Free</h3>
-              <p>Get started with no commitment.</p>
+              <p>For trying Kavum in daily practice.</p>
             </div>
             <div class="pricing-card__price">
               <span class="price-amount">₹0</span>
@@ -406,9 +383,9 @@
               <li class="feat feat--yes">PDF &amp; image export</li>
               <li class="feat feat--yes">WhatsApp sharing</li>
               <li class="feat feat--yes">Doctor profile &amp; signature</li>
-              <li class="feat feat--yes">5 most recent prescriptions</li>
-              <li class="feat feat--no">Unlimited prescription history</li>
-              <li class="feat feat--no">Ad-free experience</li>
+              <li class="feat feat--yes">Local prescriptions and patients</li>
+              <li class="feat feat--no">Medical cloud sync</li>
+              <li class="feat feat--yes">No ads</li>
               <li class="feat feat--no">All prescription templates</li>
             </ul>
             <a class="btn btn--outline btn--full"
@@ -419,18 +396,19 @@
           <article class="pricing-card pricing-card--pro">
             <div class="pricing-card__badge">Best value</div>
             <div class="pricing-card__head">
-              <h3>Pro Annual</h3>
-              <p>For doctors who use Kavum every day.</p>
+              <h3 class="proannual">Pro Annual</h3>
+              <p>For doctors who want Kavum everywhere.</p>
             </div>
             <div class="pricing-card__price">
-              <span class="price-amount">₹125</span>
+              <span class="price-amount">₹208</span>
               <span class="price-period">/ month</span>
             </div>
-            <p class="price-billed">Billed annually at ₹1,499 · Save 37%</p>
+            <p class="price-billed">Billed annually at ₹2,499 · Save 30%</p>
             <ul class="pricing-card__features">
               <li class="feat feat--yes">Everything in Free</li>
+              <li class="feat feat--yes">Encrypted medical cloud sync</li>
               <li class="feat feat--yes">Unlimited prescription history</li>
-              <li class="feat feat--yes">Ad-free experience</li>
+              <li class="feat feat--yes">No ads</li>
               <li class="feat feat--yes">All prescription templates</li>
               <li class="feat feat--yes">Remove Kavum watermark</li>
               <li class="feat feat--yes">Custom logo on prescriptions</li>
@@ -443,16 +421,17 @@
           <article class="pricing-card">
             <div class="pricing-card__head">
               <h3>Pro Monthly</h3>
-              <p>Full access with no annual commitment.</p>
+              <p>Full access with monthly flexibility.</p>
             </div>
             <div class="pricing-card__price">
-              <span class="price-amount">₹199</span>
+              <span class="price-amount">₹299</span>
               <span class="price-period">/ month</span>
             </div>
             <ul class="pricing-card__features">
               <li class="feat feat--yes">Everything in Free</li>
+              <li class="feat feat--yes">Encrypted medical cloud sync</li>
               <li class="feat feat--yes">Unlimited prescription history</li>
-              <li class="feat feat--yes">Ad-free experience</li>
+              <li class="feat feat--yes">No ads</li>
               <li class="feat feat--yes">All prescription templates</li>
               <li class="feat feat--yes">Remove Kavum watermark</li>
               <li class="feat feat--yes">Custom logo on prescriptions</li>
@@ -508,10 +487,10 @@
     <div class="wrap site-footer__inner">
       <div class="site-footer__brand">
         <a class="brand" href="index.html">
-          <img class="brand__icon brand__icon--light" src="assets/kavum_light.png" alt="Kavum"><img class="brand__icon brand__icon--dark"  src="assets/kavum_dark.png"  alt="Kavum">
+          <img class="brand__icon brand__icon--light" src="assets/play_store_512.png" alt="Kavum">
           <span class="brand__name">Kavum</span>
         </a>
-        <p>Digital prescription and patient record tool for licensed doctors in India.</p>
+        <p>A prescription and patient record workflow for licensed doctors in India.</p>
       </div>
       <nav class="site-footer__links" aria-label="Footer">
         <a href="https://play.google.com/store/apps/details?id=com.schr_0dinger.presco" target="_blank"
@@ -523,20 +502,6 @@
     </div>
   </footer>
 
-  <script>
-    (function () {
-      var html = document.documentElement;
-      var btn = document.getElementById('theme-toggle');
-      btn.addEventListener('click', function () {
-        var next = html.dataset.theme === 'dark' ? 'light' : 'dark';
-        html.dataset.theme = next;
-        localStorage.setItem('kavum-theme', next);
-      });
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-        if (!localStorage.getItem('kavum-theme')) { html.dataset.theme = e.matches ? 'dark' : 'light'; }
-      });
-    })();
-  </script>
 </body>
 
 </html>

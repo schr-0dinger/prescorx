@@ -9,9 +9,9 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Dr. Kailas Nath K M">
   <meta name="application-name" content="Kavum">
-  <meta name="theme-color" content="#f6f1e8">
-  <link rel="icon" type="image/png" href="assets/kavum_light.png">
-  <link rel="apple-touch-icon" href="assets/kavum_light.png">
+  <meta name="theme-color" content="#e4f1ec">
+  <link rel="icon" type="image/png" href="assets/play_store_512.png">
+  <link rel="apple-touch-icon" href="assets/play_store_512.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kavum.in/privacy.html">
   <meta property="og:site_name" content="Kavum">
@@ -59,12 +59,8 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-  <script>
-    (function () { var t = localStorage.getItem('kavum-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); document.documentElement.dataset.theme = t; })();
-  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -72,8 +68,7 @@
   <div class="page-shell">
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Kavum home">
-        <img class="brand__icon brand__icon--light" src="assets/kavum_light.png" alt="Kavum"><img
-          class="brand__icon brand__icon--dark" src="assets/kavum_dark.png" alt="Kavum">
+        <img class="brand__icon brand__icon--light" src="assets/play_store_512.png" alt="Kavum">
         <span class="brand__name">Kavum</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -82,24 +77,6 @@
         <a href="privacy.html" aria-current="page">Privacy</a>
         <a href="terms.html">Terms</a>
       </nav>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg>
-        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5" />
-          <line x1="12" y1="1" x2="12" y2="3" />
-          <line x1="12" y1="21" x2="12" y2="23" />
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-          <line x1="1" y1="12" x2="3" y2="12" />
-          <line x1="21" y1="12" x2="23" y2="12" />
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-        </svg>
-      </button>
       <a class="btn btn--primary btn--sm" href="https://play.google.com/store/apps/details?id=com.schr_0dinger.presco"
         target="_blank" rel="noreferrer">Get the App</a>
     </header>
@@ -108,7 +85,7 @@
       <section class="legal-hero">
         <p class="eyebrow">Kavum legal</p>
         <h1>Privacy Policy</h1>
-        <p class="legal-updated">Last updated: April 30, 2026</p>
+        <p class="legal-updated">Last updated: May 4, 2026</p>
       </section>
 
       <section class="legal-card-list">
@@ -145,7 +122,7 @@
             <br>• Diagnosis and consultation notes
             <br>• Patient information (name, age, gender, phone, patient ID)
           </p><br>
-          <p>Such data shall be processed in accordance with the Digital Personal Data Protection Act (DPDPA) of India, where applicable. Sensitive data is encrypted on your device before transmission and stored securely using industry-standard encryption. Your signature image and clinic logo are saved in app storage on your device and used to generate prescriptions.
+          <p>Such data shall be processed in accordance with the Digital Personal Data Protection Act (DPDPA) of India, where applicable. For free-tier users, prescription and patient data is stored locally on the device. Kavum Pro users may enable Cloud Sync to store encrypted prescription and patient data in Firebase for backup and cross-device access. Existing local data may be uploaded after Pro purchase or when Cloud Sync is enabled. Your signature image and clinic logo are saved in app storage on your device and used to generate prescriptions.
           </p>
         </article>
 
@@ -165,25 +142,27 @@
         <article class="legal-card">
           <h2>Google and Other Service Providers</h2>
           <p>
-            Kavum relies on Firebase for authentication and encrypted prescription
-            storage, Firebase Cloud Functions for subscription verification with Google
+            Kavum relies on Firebase for authentication, doctor profile and signature sync,
+            encrypted medical cloud sync for Pro users, Firebase Cloud Functions for subscription verification with Google
             Play, Google Sign-In for optional account access, Google Play Billing for
-            subscriptions, and AdMob may collect device identifiers and limited usage data to display non-personalized ads in accordance with Google’s policies. These services process data in accordance with their own
+            subscriptions. These services process data in accordance with their own
             privacy policies.
             <br><br>
-            We do not sell or share personal or patient data with AdMob or any other
-            third parties for advertising or marketing purposes.
+            We do not sell or share personal or patient data with third parties for advertising or marketing purposes.
           </p>
         </article>
 
         <article class="legal-card">
           <h2>Data Storage and Retention</h2>
           <p>
-            Prescription and profile data are retained until you delete them or
-            delete your account. Subscription status data is updated automatically
-            when your subscription renews or expires. Deleting your account removes
-            your doctor profile, prescriptions, and locally saved signature and logo
-            files associated with the app.
+            Doctor profile and signature data are retained until you delete them or
+            delete your account. Free-tier prescription and patient data is retained
+            locally on your device until you delete it, delete app data, or delete
+            your account. Pro medical cloud data is retained until you delete it or
+            delete your account. Turning off Cloud Sync pauses future medical
+            sync but does not automatically delete existing cloud records.
+            Subscription status data is updated automatically when your subscription
+            renews or expires.
           </p><br>
           <p>Data may be processed and stored on secure servers provided by Firebase (Google), which may be located outside India.</p>
         </article>
@@ -252,8 +231,7 @@
     <footer class="site-footer">
       <div>
         <a class="brand brand--footer" href="index.html">
-          <img class="brand__icon brand__icon--light" src="assets/kavum_light.png" alt="Kavum"><img
-            class="brand__icon brand__icon--dark" src="assets/kavum_dark.png" alt="Kavum">
+          <img class="brand__icon brand__icon--light" src="assets/play_store_512.png" alt="Kavum">
           <span class="brand__name">Kavum</span>
         </a>
         <p class="site-footer__note">Kavum Privacy Policy page for app listing and support links.</p>
@@ -266,20 +244,6 @@
       </div>
     </footer>
   </div>
-  <script>
-    (function () {
-      var html = document.documentElement;
-      var btn = document.getElementById('theme-toggle');
-      btn.addEventListener('click', function () {
-        var next = html.dataset.theme === 'dark' ? 'light' : 'dark';
-        html.dataset.theme = next;
-        localStorage.setItem('kavum-theme', next);
-      });
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-        if (!localStorage.getItem('kavum-theme')) { html.dataset.theme = e.matches ? 'dark' : 'light'; }
-      });
-    })();
-  </script>
 </body>
 
 </html>
