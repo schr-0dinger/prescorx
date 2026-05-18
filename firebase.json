@@ -5,7 +5,16 @@
     "ignore": [
       "firebase.json",
       ".firebaserc",
+      ".firebase",
+      ".firebase/**",
+      ".git",
+      ".git/**",
+      ".github",
+      ".github/**",
+      ".gitignore",
       "CNAME",
+      "FIREBASE_HOSTING.md",
+      "firebase-debug.log",
       "**/.*",
       "**/node_modules/**"
     ],
